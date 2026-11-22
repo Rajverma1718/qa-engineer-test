@@ -12,7 +12,7 @@ router.get('/', authenticate, (req, res) => {
 
     const formattedPayments = payments.map(p => ({
       id: p.id,
-      amount: p.amount
+      amount: p.amount,
       currency: p.currency,
       status: p.status,
       customer_email: p.customer_email,
